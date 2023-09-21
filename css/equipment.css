@@ -1,0 +1,180 @@
+.equipment__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 228px 228px;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+.equipment__title {
+    margin-bottom: 40px;
+    white-space: pre-line;
+}
+
+.equipment__wrapper {
+    padding-bottom: 70px;
+}
+
+.equipment__item {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    padding: 162px 0 10px 40px;
+}
+
+.equipment__item--vr {
+    background-image: url("../image/equipment/vr.jpg");
+}
+
+.equipment__item--audio {
+    background-image: url("../image/equipment/audio.jpg");
+    position: relative;
+    top: 70px;
+    left: 0;
+}
+
+.equipment__item--micro {
+    background-image: url("../image/equipment/micro.jpg");
+}
+
+.equipment__item--game {
+    background-image: url("../image/equipment/game.jpg");
+}
+
+.equipment__item--netflix {
+    background-image: url("../image/equipment/netflix.jpg");
+    position: relative;
+    top: 70px;
+    left: 0;
+}
+
+.equipment__item--sony {
+    background-image: url("../image/equipment/sony.jpg");
+}
+
+.equipment__item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 2px rgb(255, 255, 255);
+}
+
+.equipment__text {
+    white-space: pre-line;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+
+@media (max-width: 1050px) {
+    .equipment {
+        padding: 41px 0 46px 0;
+    }
+
+    .equipment__wrapper {
+        padding-bottom: 40px;
+    }
+
+    .equipment__list {
+        grid-template-rows: 172px 172px;
+        column-gap: 22px;
+        row-gap: 30px;  
+    }
+    
+    .equipment__title {
+        margin-bottom: 36px;
+    }
+
+    .equipment__item {
+        padding: 114px 20px 0 20px;
+    }
+
+    .equipment__text {
+        white-space: normal;
+    }
+
+    .equipment__item--netflix {
+        padding: 80px 20px 0 20px;
+    }
+
+    .equipment__item--audio {
+        top: 50px;
+    }
+
+    .equipment__item--netflix {
+        top: 50px;
+    }
+}
+
+
+@media (max-width: 870px) { 
+    .equipment {
+        padding: 40px 0 30px 0;
+    }
+
+    .equipment__title {
+        margin-bottom: 30px;
+    }
+
+    .equipment__wrapper {
+        padding-bottom: 0;
+    }
+
+    .equipment__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 200px 200px;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .equipment__item {
+        position: relative;
+        top: 0;
+        right: 0;
+        padding: 132px 30px 0 30px;
+    }
+
+    .equipment__text {
+        font-size: 20px;
+        line-height: 28px;
+        white-space: pre-line;
+    }
+}
+
+@media (max-width: 743px) {
+    .equipment__text {
+        font-size: 14px;
+        line-height: 16px;
+        white-space: normal;
+    }
+}
+
+@media (max-width: 480px) {
+    .equipment {
+        padding: 23px 0 15px 0;
+    }
+
+    .equipment__title {
+        margin-bottom: 15px;
+    }
+
+    .equipment__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 75px 75px 75px;
+        gap: 10px;
+    }
+
+    .equipment__item{
+        padding: 30px 10px 0 10px;
+    }
+    
+    .equipment__text {
+        font-size: 10px;
+        line-height: 14px;
+        white-space: normal;
+    }
+}
